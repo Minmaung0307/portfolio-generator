@@ -45,27 +45,31 @@
 // console.log(generatePage(name, github));
 
 //#6
-const profileDataArgs = process.argv.slice(2, process.argv.length);
-const [name, github] = profileDataArgs;
+// const profileDataArgs = process.argv.slice(2, process.argv.length);
+// const [name, github] = profileDataArgs;
 
-const generatePage = (userName, githubName) => {
-  return `
-  <!DOCTYPE html> 
-  <html lang="en"> 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio Demo</title>
-  </head>
+// const generatePage = (userName, githubName) => {
+//   return `
+//   <!DOCTYPE html>
+//   <html lang="en">
+//   <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+//     <title>Portfolio Demo</title>
+//   </head>
 
-  <body>
-    <h1>${name}</h1>
-    <h2><a href="https://github.com/${github}">Github</a></h2>
-  </body>
-  </html>
-        `;
-};
+//   <body>
+//     <h1>${name}</h1>
+//     <h2><a href="https://github.com/${github}">Github</a></h2>
+//   </body>
+//   </html>
+//         `;
+// };
 
-console.log(name, github);
-console.log(generatePage(name, github));
+// console.log(name, github);
+// console.log(generatePage(name, github));
+
+//#7
+//ဒီမှာရေးပြီးသားအားလုံးကို ဟိုဘက်ရွှေ့ပြီး အခုလိုပြန်ချိတ်ဆက်လိုက်တာ
+const generatePage = require("./src/page-template.js");
