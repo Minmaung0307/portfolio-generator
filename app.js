@@ -73,3 +73,29 @@
 //#7
 //ဒီမှာရေးပြီးသားအားလုံးကို ဟိုဘက်ရွှေ့ပြီး အခုလိုပြန်ချိတ်ဆက်လိုက်တာ
 const generatePage = require("./src/page-template.js");
+
+//git-မှာ အမှတ်မဲ့ ထည့်မိလိုက်တဲ့ tracking files တွေကိုဖယ်ရှားဖို့
+//git rm -r --cached node_modules ကိုသုံးပါ။
+
+//#8
+//inquirer ထည့်ဖို့လိုတော့
+const inquirer = require("inquirer");
+// const fs = require("fs");
+// const generatePage = require("./src/page-template");
+// const pageHTML = generatePage(name, github);
+// fs.writeFile("./index.html", pageHTML, (err) => {
+//   if (err) throw err;
+//   console.log("Portfolio complete! Check out index.html to see the output!");
+// });
+// console.log(inquirer);
+
+//inquirer's prompt method
+inquirer
+  .prompt([
+    {
+      type: "input",
+      name: "name",
+      message: "What is your name?",
+    },
+  ])
+  .then((answers) => console.log(answers));
