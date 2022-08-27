@@ -1,23 +1,19 @@
 {
-  "dependencies": {
-    "inquirer": "^8.2.4"
-  },
-  "name": "portfolio-generator",
-  "description": "",
+  "name": "project",
   "version": "1.0.0",
+  "description": "",
   "main": "app.js",
-  "devDependencies": {},
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./test/sample.js",
+    "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Minmaung0307/portfolio-generator.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Minmaung0307/portfolio-generator/issues"
-  },
-  "homepage": "https://github.com/Minmaung0307/portfolio-generator#readme"
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
